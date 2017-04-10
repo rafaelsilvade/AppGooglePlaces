@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Oficinas proximas</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+  <link href="public/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
+
+
+  <script type="text/javascript" src="public/assets/js/plugins/loaders/pace.min.js"></script>
+  <script type="text/javascript" src="public/assets/js/core/libraries/jquery.min.js"></script>
+  <script type="text/javascript" src="public/assets/js/core/libraries/bootstrap.min.js"></script>
+  <script type="text/javascript" src="public/assets/js/plugins/loaders/blockui.min.js"></script>
+
+  <link href="public/style.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="public/js/app.js"></script>
+</head>
+
+<body>
+  <div class="content" style="height:100%;">
+    <div class="row" style="height:100%;">
+
+
+
+      <div class="col-md-4" style="height: 100%;">
+
+        <div class="panel panel-flat bg-primary" style="height: 100%; border-color: inherit;">
+          <div class="panel-heading">
+            <h6 class="panel-title"></h6>
+
+            <div class="heading-elements">
+              <ul class="icons-list">
+                <li>
+                  <a data-action="collapse"></a>
+                </li>
+                <li>
+                  <a data-action="reload"></a>
+                </li>
+                <li>
+                  <a data-action="close"></a>
+                </li>
+              </ul>
+            </div>
+            <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+          </div>
+
+          <div class="panel-body">
+
+            <div class="form-group has-feedback has-feedback-left">
+              <input id="pac-input123" class="form-control input-sm" type="text" placeholder="CEP, Endereço, Cidade, Local.">
+              <div class="form-control-feedback">
+                <i class="icon-pin-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body" style="background-color: #fff; border-color:#fff;">
+            <ul id="places">
+              <li>
+                
+              </li>
+            </ul>
+
+          </div><br />
+          <div class="text-right" style="margin-right: 10px;"><button id="more" class="btn btn-danger ">Mostrar mais</button></div>
+        </div>
+
+      </div>
+
+      <div class="col-md-8" style="height: 100%">
+        <div id="map"></div>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBfNGbHk5fMZpl04pkrldY49-j1uW4p3Y&libraries=places&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
